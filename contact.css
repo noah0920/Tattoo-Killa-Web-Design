@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0, 0.6)
+    ),url('images/Contact/bc-contact.jpg');
+    background-size: cover;
+
+}
+
+img{
+    width: 612px;
+    height: 935px;
+    margin:  0px 320px;
+}
+
+.contenedor-formulario{
+    background-color: bisque;
+    width: 500px;
+    height: 200px;
+}
+

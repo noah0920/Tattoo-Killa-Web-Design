@@ -32,9 +32,16 @@ header{
     position: relative;
 }
 .logo{
+    width: 350px;
+    height: 200px;
+    padding: 0 20px;
+    margin: 0;
+    border: none;
+}
+/*.logo{
     cursor: pointer;
     display: block;
-}
+}*/
 .nav-links{
     position: absolute;
     top: 35px;
@@ -47,20 +54,20 @@ header{
 }
 .nav-links li a {
     transition: all .3s  ease 0s;
+    padding: 5px;
 }
 .nav-links li a:hover{
     font-size: 20px;
+    border-bottom: 1px #fff solid;
 }
 .especial{
-    background-color: #404040;
+    border-bottom: 1px #fff solid;
+    background-color: transparent;
+    outline: none;
     color: #fff;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 5px;
 }
-.especial:hover{
-    background-color: #fff;
-    color: #000;
-}
+
 .random h1{
     color: #fff;
     font-size: 60px;
