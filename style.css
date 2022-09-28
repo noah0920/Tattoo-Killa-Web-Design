@@ -18,6 +18,7 @@ ul, a{
     color: #fff;
     text-decoration: none;
 }
+
 h2{
     color: #fff;
     font-size: 35px;
@@ -31,17 +32,20 @@ header{
     padding: 30px 10%;
     position: relative;
 }
-.logo{
+/*.logo{
     width: 350px;
     height: 200px;
     padding: 0 20px;
     margin: 0;
     border: none;
-}
-/*.logo{
+}*/
+.logo{
     cursor: pointer;
     display: block;
-}*/
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+}
 .nav-links{
     position: absolute;
     top: 35px;
@@ -52,7 +56,7 @@ header{
     display: inline;
     padding: 0 20px;
 }
-.nav-links li a {
+.nav-links li a {        /*REVISAR SOMBRA DEL HOVER DEL LINK DE NAVEGACION*/
     transition: all .3s  ease 0s;
     padding: 5px;
 }
@@ -68,14 +72,64 @@ header{
     padding: 5px;
 }
 
-.random h1{
+.texto-principal h1{
     color: #fff;
-    font-size: 60px;
+    font-size: 70px;
     margin-top: 120px;
     margin-left: 80px;
+    letter-spacing: 1.5px;
 }
-.random h2{
+.texto-principal h2{
     margin-top: 40px;
     margin-left: 80px;
     font-size: 25px;
+    letter-spacing: 1px;
 }
+
+.redes{     
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 40px;
+    margin-top: 450px;
+   
+}
+.redes a{
+    display: block;
+    margin:  0 50px; 
+    font-size: 25px;
+    background-color: #404040;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 6px 6px 8px -1px rgba(0, 0,0, 0.15),
+    6px 6px 8px -1px #404040;
+    transition:  0.5s;
+}
+.redes a i{
+    transition: .5s;
+    font-size: 23px;
+}
+a:hover{
+    box-shadow: 4px 4px 6px -1px rgba(0, 0,0, 0.2),
+    -4px -4px 6px -1px #404040;
+    transform: translateY(2px);
+}
+a:hover i{
+    transform: scale(0.90);
+}
+a:hover i{
+    transform: scale(0.90);
+}
+a:hover .fa-facebook{
+    color: #4767ab;
+}
+a:hover .fa-instagram{
+    color:#f143a6 ;
+}
+a:hover .fa-linkedin{
+    color: #00acee;
+}
+
+a:hover .fa-whatsapp{
+    color: #4fce5d;
+}
+
