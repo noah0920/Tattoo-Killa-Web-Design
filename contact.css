@@ -6,10 +6,69 @@
 
 body{
     background-color: aqua;
-    background-image: url('images/Contact/bc-contact.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('images/Contact/bc-contact.jpg');
     background-size: cover;
+    height: 130vh;
     font-family: sans-serif;
 }
+
+
+/***********
+*BARRA DE NAVEGACION*
+***********/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    position: relative;
+}
+.logo{
+    cursor: pointer;
+    display: block;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+}
+.nav-links{
+    position: absolute;
+    top: 35px;
+    right: 0;
+    list-style: none;
+}
+.nav-links li{
+    display: inline;
+    padding: 0 20px;
+}
+.nav-links li a {        /*REVISAR SOMBRA DEL HOVER DEL LINK DE NAVEGACION*/
+    transition: all .3s  ease 0s;
+    padding: 5px;
+}
+.nav-links li a:hover{
+    font-size: 20px;
+    border-bottom: 1px #fff solid;
+}
+.especial{
+    border-bottom: 1px #fff solid;
+    background-color: transparent;
+    outline: none;
+    color: #fff;
+    padding: 5px;
+}
+
+
+
+
+
+/***********
+*BARRA DE NAVEGACION*
+***********/
+
+
+/***********
+*FORMULARIO*
+***********/
+
 
 .contenedor-formulario{
     margin: 200px auto;
@@ -35,12 +94,14 @@ body{
     justify-content: center;
     margin: 35px;
 }
+
 .contenedor-campos .campo label{
+    position: relative;
     font-size: 20px;
+    font-family: sans-serif;
     margin-bottom: 5px;
 }
 .contenedor-campos .campo input{
-    
     background-color: transparent;
     font-size: 18px;
     display: block;
@@ -102,3 +163,6 @@ body{
 }
 /*BOTON CHECKBOX*/
 
+/***********
+*FORMULARIO*
+***********/

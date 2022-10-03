@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Contact/bc-contact.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 150vh;
+    width: 100vh;
+    font-family: sans-serif;
+}
+
+.logo{
+    cursor: pointer;
+    display: block;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+}
+.nav-links{
+    position: absolute;
+    top: 35px;
+    right: 0;
+    list-style: none;
+}
+.nav-links li{
+    display: inline;
+    padding: 0 20px;
+}
+.nav-links li a {        /*REVISAR SOMBRA DEL HOVER DEL LINK DE NAVEGACION*/
+    transition: all .3s  ease 0s;
+    padding: 5px;
+}
+.nav-links li a:hover{
+    font-size: 20px;
+    border-bottom: 1px #fff solid;
+}
+.especial{
+    border-bottom: 1px #fff solid;
+    background-color: transparent;
+    outline: none;
+    color: #fff;
+    padding: 5px;
+}

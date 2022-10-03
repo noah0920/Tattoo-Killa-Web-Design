@@ -86,11 +86,12 @@ header{
     letter-spacing: 1px;
 }
 
+
 .redes{     
     display: flex;
     justify-content: flex-start;
     margin-left: 40px;
-    margin-top: 450px;
+    margin-top: 300px;
    
 }
 .redes a{
