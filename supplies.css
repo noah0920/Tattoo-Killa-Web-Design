@@ -45,3 +45,17 @@ body{
     color: #fff;
     padding: 5px;
 }
+
+
+
+/*productos*/
+.producto-imagen{
+    width: 330px;
+    height: 230px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat (3, 1fr);
+    gap: 1rem;
+}
