@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.3)
+    ) ,url('images/Contact/bc-contact.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vh;
+    height: 500vh;
+    font-family: sans-serif;
+}
+
+/*imagenes del artista*/
+.artista-imagen{
+    width: 354px;
+    height: 530px;
+}
+.artista{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    gap: 2rem;
+    align-items: center;
+    margin: 150px 200px;
+    box-shadow: 2px 1px 30px 10px rgba(255,255,255,0.40);
+}
+
+/*informacion del artista*/
+.datos p{
+    color: #fff;
+    margin: 20px 50px;
+}
+.datos .nombre{
+    font-size: 30px;
+    display: block;
+    width: 300px;
+   
+    background-color: gray;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 180px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.datos .descripcion{
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.redes{
+    color: #fff;
+    margin-left: 40px;
+}
+.redes i{
+    margin: 10px 10px;
+    padding: 10px;
+    background-color: blueviolet;
+    border-radius: 50px;
+}
