@@ -5,8 +5,8 @@
 }
 
 body{
-    background-color: aqua;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('images/Contact/bc-contact.jpg');
+    background-color: antiquewhite;
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('images/Contact/bc-contact.jpg');*/
     background-size: cover;
     height: 130vh;
     font-family: sans-serif;
@@ -56,10 +56,6 @@ header{
     padding: 5px;
 }
 
-
-
-
-
 /***********
 *BARRA DE NAVEGACION*
 ***********/
@@ -69,79 +65,88 @@ header{
 *FORMULARIO*
 ***********/
 
-
-.contenedor-formulario{
-    margin: 200px auto;
-    background-color: #BFBBB4;
-    width: 403px;
-    height: 488px;
+/*contenedor*/
+.contenedor{
+    background-color: #fff;
+    width:130vh;
+    height: 100vh;
+    margin: 100px 250px ;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     border-radius: 20px;
 }
-.contenedor-formulario h3{
-    font-size: 35px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
+
+.imagen-izquierda{
+    
+}
+.imagen-izquierda img{
+    width: 500px;
+    height: 800px;
+}
+
+.formulario-derecha h1{
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-align: center;
     padding-top: 20px;
 }
 
-.contenedor-campos .campo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 35px;
+.inputs{
+    padding: 0 20px;
 }
 
-.contenedor-campos .campo label{
-    position: relative;
-    font-size: 20px;
-    font-family: sans-serif;
-    margin-bottom: 5px;
-}
-.contenedor-campos .campo input{
-    background-color: transparent;
-    font-size: 18px;
-    display: block;
-    width: 80%;
-    border: none;
-    margin: 5px;
-}
-
-.contenedor-campos .campo input:focus{
-    border-bottom: 1px solid #000;
-    transition: .3s;
+.inputs input{
+    background: transparent;
     outline: none;
+    border: none;
+    border-bottom: 1px solid #000;
+    width: 250px;
+    margin: 20px 0;
 }
 
-.btn{
-    display: block;
-    margin: 50px 10px;
-    padding: 8px 30px;
-    font-size: 17px;
-    border-radius: 5px;
-    border: none;
+.inputs input:focus{
+    width: 300px;
+    transition: .3s;
 }
+
+span{
+    display: flex;
+    margin: 20px 0;   /*colocar de nuevo el checkbox*/
+}
+
+.mensaje{
+    font-size: 12px;
+}
+button{
+    display: flex;
+    margin-top: 10px;
+    padding: 8px 12px;
+    border: none;
+    font-size: 15px;
+    border-radius: 50px;
+}
+
 
 
 /*BOTON CHECKBOX*/
 .boton{
     margin: 10px;
+    display: flex;
 }
 .label-switch{
     display: inline-block;
     width: 55px;
     height: 30px;
-    background: rgb(159, 120, 120);
+    background: rgb(0, 0, 0);
     border-radius: 100px;
+    margin-top: 10px;
+    margin-left: 10px;
     position: relative;
     cursor: pointer;
 }
 
 #boton-switch:checked~ .label-switch{  /*hace que cambie de color al presionarlo*/
-    background:rgb(210, 84, 84) ;
+    background:rgb(71, 66, 66) ;
 }
 .label-switch::after{
     position: absolute;
