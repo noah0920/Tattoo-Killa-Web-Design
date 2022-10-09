@@ -146,7 +146,7 @@ button{
 }
 
 #boton-switch:checked~ .label-switch{  /*hace que cambie de color al presionarlo*/
-    background:rgb(71, 66, 66) ;
+    background:rgb(110, 103, 103) ;
 }
 .label-switch::after{
     position: absolute;

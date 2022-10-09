@@ -47,6 +47,11 @@ body{
 }
  
 /*texto*/
+h1{
+    color: #fff;
+    font-size: 50px;
+    margin-top: 50px;
+}
 p{
     color: #fff;
 }
@@ -56,12 +61,32 @@ p{
 .supplie-imagen{
     width: 330px;
     height: 230px;
+    box-shadow: 2px 1px 20px 8px rgba(172, 171, 171, 0.4);
 }
 
 
-.grid{
+.grid{   /*3 imagenes principales*/
     display: grid;
-    grid-template-columns: repeat (3, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+    margin: 140px ;
 }
 
+.btn{
+    display: grid;
+    grid-column: 2/4 ;
+    width: 120px;
+    margin: 50px 160px;
+    padding: 12px 13px;
+    border-radius: 8px;
+    font-size: 18px;
+    
+
+    border: none;
+    outline: none;
+}
+.btn:hover{
+    box-shadow: 2px 1px 10px 4px rgba(172, 171, 171, 0.4);
+    transition: .3s;
+    outline: none;
+}
