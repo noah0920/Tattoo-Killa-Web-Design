@@ -12,40 +12,34 @@ body{
     width: 100vh;
     font-family: sans-serif;
 }
-
-.logo{
-    cursor: pointer;
-    display: block;
-    color: #fff;
-    font-size: 35px;
-    font-weight: bold;
-}
-.nav-links{
-    position: absolute;
-    top: 35px;
-    right: 0;
+li, a, button{
     list-style: none;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
 }
-.nav-links li{
-    display: inline;
+li{
+    display: inline-block;
     padding: 0 20px;
 }
-.nav-links li a {        /*REVISAR SOMBRA DEL HOVER DEL LINK DE NAVEGACION*/
-    transition: all .3s  ease 0s;
-    padding: 5px;
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
 }
-.nav-links li a:hover{
-    font-size: 20px;
-    border-bottom: 1px #fff solid;
-}
-.especial{
-    border-bottom: 1px #fff solid;
-    background-color: transparent;
-    outline: none;
+
+.logo{
     color: #fff;
-    padding: 5px;
+    font-weight: bold;
+    font-size: 30px;
 }
- 
+a:hover{
+    border-bottom: 1px solid #fff;
+    padding-bottom: 3px;
+    transition: .3s;
+}
+
 /*texto*/
 h1{
     color: #fff;
@@ -72,7 +66,28 @@ p{
     margin: 140px ;
 }
 
-.btn{
+
+         
+.btn {
+    background-image: linear-gradient(to right, #191b1b 0%, #343636  51%, #292a2c  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border: none;
+    border-radius: 10px;
+    display: block;
+  }
+
+  .btn:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+ 
+/* .btn{
     display: grid;
     grid-column: 2/4 ;
     width: 120px;
@@ -89,4 +104,4 @@ p{
     box-shadow: 2px 1px 10px 4px rgba(172, 171, 171, 0.4);
     transition: .3s;
     outline: none;
-}
+} */

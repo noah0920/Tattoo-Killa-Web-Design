@@ -13,7 +13,18 @@ body{
     height: 100vh;
 }
 
-
+li, a, button{
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    list-style: none;
+}
+li{
+    display: inline-block;
+    padding: 0 20px;
+}
+ 
 header{
     display: flex;
     justify-content: space-between;
@@ -23,51 +34,16 @@ header{
 
 .logo{
     color: #fff;
-    cursor: pointer;
-    font-size: 25px;
     font-weight: bold;
-    letter-spacing: 1px;
+    cursor: pointer;
+    font-size: 30px;
 }
 
-.nav-links{
-    list-style: none;
+a:hover{
+    border-bottom: 1px solid #fff;
+    padding-bottom: 3px;
+    transition: .3s;
 }
-.nav-links li{
-    display: inline-block;
-    padding: 0 20px;
-}
-.nav-links li a{
-    transition: all ;
-}
-li, a, button{
-    font-weight: 550;
-    font-size: 18px;
-    color: #fff;
-    text-decoration: none;
-}
-
-button{
-    border: none;
-    border-radius: 50px;
-    padding: 5px 8px;
-    color: #000;
-}
-
-h2{
-    color: #fff;
-    font-size: 35px;
-    padding-right: 0px;
-    letter-spacing: 1px;
-}
-
-
-
-
-
-
-
-
-
 
 .texto-principal h1{
     color: #fff;

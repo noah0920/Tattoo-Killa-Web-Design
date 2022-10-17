@@ -17,17 +17,41 @@ body{
 }
 
 /*barra de navegacion*/
-.nav-bar{
-    background-color: #ffff;
+li, a, button{
+    text-decoration: none;
+    list-style: none;
+    color: #ffff;
+}
+
+li{
+    display: inline-block;
+    padding: 0 20px;
+}
+a:hover{
+    border-bottom: 1px solid #fff;
+    padding-bottom: 3px;
+    transition: .3s;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
 }
 
 .logo{
     color: #ffff;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 /*titulo principal*/
 h1{
     color: #ffff;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
 }
 
 
@@ -66,6 +90,6 @@ h1{
 .grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 1rem;
 }
 

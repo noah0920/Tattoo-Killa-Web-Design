@@ -19,12 +19,33 @@ body{
 
 /*barra de navegacion*/
 
-.logo{
+li, a, button{
+    text-decoration: none;
+    list-style: none;
     color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+}
+li{
+    display: inline-block;
+    padding: 0 20px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+.logo{
+    color: #fff ;
     font-weight: bold;
     font-size: 30px;
-    letter-spacing: 1px;
-    margin: 20px;
+}
+
+ a:hover{
+    border-bottom: 1px solid #fff;
+    padding-bottom: 3px;
+    transition: .3s;
 }
 
 /*inicio*/
