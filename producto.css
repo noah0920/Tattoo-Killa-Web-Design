@@ -1,0 +1,16 @@
+
+.producto .imagen{
+    background-image: url('images/Supplies/adaptadores.jpg');
+    background-size: cover;
+    width: 496px;
+    height: 372px;
+}
+.producto{
+    margin: 140px auto;
+    width: 140vh;
+    background-color: bisque;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+

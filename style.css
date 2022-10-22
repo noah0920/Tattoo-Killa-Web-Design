@@ -32,6 +32,20 @@ header{
     padding: 30px 10%;
 }
 
+header button{
+    background-color: #f00;
+    padding: 7px 10px;
+    border-radius: 15px;
+    border: none;
+    color: #000;
+    background-color: #e7e7e7;
+}
+
+header button:hover{
+    background-color: #000;
+    color: #e7e7e7;
+    transition: .4s;
+}
 .logo{
     color: #fff;
     font-weight: bold;
@@ -39,7 +53,7 @@ header{
     font-size: 30px;
 }
 
-a:hover{
+.nav-item:hover{
     border-bottom: 1px solid #fff;
     padding-bottom: 3px;
     transition: .3s;
@@ -55,8 +69,9 @@ a:hover{
 .texto-principal h2{
     margin-top: 40px;
     margin-left: 80px;
-    font-size: 25px;
+    font-size: 28px;
     letter-spacing: 1px;
+    color: #fff;
 }
 
 /*redes sociales*/
@@ -87,11 +102,21 @@ a:hover{
     -4px -4px 6px -1px #404040;
     transform: translateY(2px);
 }
-.redes a:hover i{
-    transform: scale(0.90);
+
+a:hover .fa-facebook{
+    color: #496ab2;
 }
-.redes a:hover i{
-    transform: scale(0.90);
+a:hover .fa-instagram{
+    color:#f143a6 ;
+}
+a:hover .fa-linkedin{
+    color: #00acee;
+}
+a:hover .fa-youtube{
+    color:#f00 ;   
+}
+a:hover .fa-whatsapp{
+    color: #4fce5d;
 }
 
 

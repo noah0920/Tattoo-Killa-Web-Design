@@ -13,7 +13,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vh;
-    height: 500vh;
+    height: 430vh;
     font-family: sans-serif;
 }
 
@@ -41,8 +41,27 @@ header{
     font-weight: bold;
     font-size: 30px;
 }
+header button{
+    padding: 7px 10px;
+    border-radius: 15px;
+    border: none;
+    color: #000;
+    background-color: #e7e7e7;
+}
 
- a:hover{
+header button:hover{
+    background-color: #000;
+    color: #e7e7e7;
+    transition: .4s;
+}
+.logo{
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.nav-item:hover{
     border-bottom: 1px solid #fff;
     padding-bottom: 3px;
     transition: .3s;

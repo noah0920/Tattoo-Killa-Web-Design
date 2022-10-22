@@ -17,21 +17,19 @@ body{
 }
 
 /*barra de navegacion*/
+
 li, a, button{
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
     text-decoration: none;
     list-style: none;
-    color: #ffff;
 }
-
 li{
     display: inline-block;
     padding: 0 20px;
 }
-a:hover{
-    border-bottom: 1px solid #fff;
-    padding-bottom: 3px;
-    transition: .3s;
-}
+ 
 header{
     display: flex;
     justify-content: space-between;
@@ -39,21 +37,48 @@ header{
     padding: 30px 10%;
 }
 
-.logo{
-    color: #ffff;
-    font-size: 30px;
-    font-weight: bold;
-    letter-spacing: 1px;
+header button{
+    background-color: #f00;
+    padding: 7px 10px;
+    border-radius: 15px;
+    border: none;
+    color: #000;
+    background-color: #e7e7e7;
 }
 
+header button:hover{
+    background-color: #000;
+    color: #e7e7e7;
+    transition: .4s;
+}
+.logo{
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.nav-item:hover{
+    border-bottom: 1px solid #fff;
+    padding-bottom: 3px;
+    transition: .3s;
+}
 /*titulo principal*/
 h1{
-    color: #ffff;
+    color: #f0f0f0;
+    font-size: 40px;
     display: flex;
     justify-content: center;
-    margin: 30px 0;
+    margin: 50px 0;
 }
 
+p{
+    color: #e7e7e7;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 60px 50px;
+}
 
 .imagen-producto{
     width: 366px;
@@ -72,6 +97,7 @@ h1{
     margin: 0 183px;
     text-align: center;
     margin-top: 30px;
+    margin-bottom: 30px;
     text-decoration: none;
     font-size: 20px;
     background-color: #ffff;
@@ -82,14 +108,15 @@ h1{
 }
 
 .producto a:hover{
-    background-color: #000;
+    background-color: rgb(49, 49, 49);
     color: #ffff;
-    border: 1px solid #ffff;
+    border: none solid #ffff;
     transition: .3s;
 }
 .grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
+/*hover con texto en imagen*/
