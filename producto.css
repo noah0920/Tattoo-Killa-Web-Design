@@ -1,16 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body{
+    font-family: sans-serif;
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Contact/bc-contact.jpg');
+}
+
+/*imagen adaptador*/
 .producto .imagen{
     background-image: url('images/Supplies/adaptadores.jpg');
     background-size: cover;
     width: 496px;
     height: 372px;
+    margin: 20px auto;
+    border-radius: 20px;
 }
+/*contenedor de todos los elementos*/
 .producto{
     margin: 140px auto;
-    width: 140vh;
-    background-color: bisque;
+    width: 160vh;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/*info sobre el producto*/
+.producto .datos{
+    background-color: #fff;
+    border-radius: 30px;
+    margin: 20px auto;
+    width: 500px;
+    height: 95vh;
+}
+
+/*estilos generales*/
+.producto .datos .titulo, .precio, .envio , .devolucion, .comprar, .pago, button {
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+/*informacion del producto*/
+.producto .datos .titulo{
+    font-size: 22px;
+    line-height: 1.5;
+    font-weight: 600;
+    letter-spacing: .5px;
+    margin-bottom: 8px;
+    margin-right: 28px;
+}
+
+.producto .datos .precio h3{
+    font-size: 24px;
+    font-weight: 500;
+    margin: 15px 0;
+}
+.producto .datos .precio span{
+    font-size: 20px;
+}
+.producto .datos .precio a{
+    display: block;
+    margin: 15px 0 ;
+    text-decoration:none ;
+    font-size: 16px;
+}
+.producto .datos .envio i{
+    margin-right: 10px;
+}
+.producto .datos .envio a, h3{
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 16px;
+}
+.producto .devolucion a{
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+}
+
+/*botones comprar*/
+button{
+    background-color: aqua;
+    width: 80%;
+    height: 45px;
+    border-radius: 10px;
+    margin: 20px 40px;
+    display: flex;
+    justify-content: center;
+    outline: none;
+    border: none;
+}
+button a{
+    text-decoration: none;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: .8px;
+}
+
+.comprar-ahora a{
+    color: #e7e7e7;
+}
+.comprar-carrito a{
+    color: #e7e7e7;
+}
+.comprar-carrito{
+    background-color: #5f5e5e;
+}
+.comprar-ahora{
+    background-color: #000;
+}
+/*medios de pago*/
+.pago{
+    width: 80%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
 }
-
+.pago-titulo {
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.pago img{
+    margin:0 auto;
+}
