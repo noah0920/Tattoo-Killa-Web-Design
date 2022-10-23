@@ -9,6 +9,56 @@ body{
     background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Contact/bc-contact.jpg');
 }
 
+/*barra de navegacion*/
+
+li, a, button{
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    list-style: none;
+}
+li{
+    display: inline-block;
+    padding: 0 20px;
+}
+ 
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+header button{
+    background-color: #f00;
+    padding: 7px 10px;
+    border-radius: 15px;
+    border: none;
+    color: #000;
+    background-color: #e7e7e7;
+}
+
+header button:hover{
+    background-color: #000;
+    color: #e7e7e7;
+    transition: .4s;
+}
+.logo{
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.nav-item:hover{
+    border-bottom: 1px solid #fff;
+    padding-bottom: 3px;
+    transition: .3s;
+}
+
+
+
 /*imagen adaptador*/
 .producto .imagen{
     background-image: url('images/Supplies/adaptadores.jpg');
@@ -25,7 +75,6 @@ body{
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
     border-radius: 20px;
     overflow: hidden;
 }
@@ -66,6 +115,7 @@ body{
 .producto .datos .precio a{
     display: block;
     margin: 15px 0 ;
+    color: #5f5e5e;
     text-decoration:none ;
     font-size: 16px;
 }
@@ -77,14 +127,18 @@ body{
     margin: 10px 0;
     font-size: 16px;
 }
+.producto .datos .envio a{
+    color: #5f5e5e;
+}
 .producto .devolucion a{
     display: block;
     margin: 10px 0;
     text-decoration: none;
+    color: #5f5e5e;
 }
 
 /*botones comprar*/
-button{
+.comprar-ahora, .comprar-carrito{
     background-color: aqua;
     width: 80%;
     height: 45px;
@@ -103,10 +157,7 @@ button a{
     letter-spacing: .8px;
 }
 
-.comprar-ahora a{
-    color: #e7e7e7;
-}
-.comprar-carrito a{
+.comprar-ahora a, .comprar-carrito a{
     color: #e7e7e7;
 }
 .comprar-carrito{
