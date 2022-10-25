@@ -60,6 +60,8 @@ header button:hover{
 
 
 /*imagen adaptador*/
+
+
 .producto .imagen{
     background-image: url('images/Supplies/adaptadores.jpg');
     background-size: cover;

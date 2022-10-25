@@ -8,7 +8,6 @@ body{
     background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Contact/bc-contact.jpg');
     background-size: cover;
     background-position: center center;
-    width: 100vh;
     font-family: sans-serif;
 }
 li, a, button{
@@ -68,12 +67,13 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aqua;
+    font-size: 40px;
+    margin: 70px 40px;
 }
 p{
-    background-color: aquamarine;
     color: #fff;
-    
+    margin: 20px 80px;
+    font-size: 20px;
 }
 
 
@@ -93,10 +93,12 @@ p{
 }
 
 
-         
+section a{
+    display: grid;
+    grid-column: 2/3;
+}
 .btn {
     background-image: linear-gradient(to right, #191b1b 0%, #343636  51%, #292a2c  100%);
-    margin: 10px;
     padding: 15px 45px;
     text-align: center;
     text-transform: uppercase;
@@ -104,7 +106,6 @@ p{
     background-size: 200% auto;
     border: none;
     border-radius: 10px;
-    display: block;
   }
 
   .btn:hover {
