@@ -74,13 +74,15 @@ p{
     color: #fff;
     margin: 20px 80px;
     font-size: 20px;
+    line-height: 2.3rem;
 }
 
 
 /*productos*/
 .supplie-imagen{
-    width: 330px;
-    height: 230px;
+    width:80%;
+    height: 100%;
+    border-radius: 10px;
     box-shadow: 2px 1px 20px 8px rgba(172, 171, 171, 0.4);
 }
 
@@ -88,8 +90,8 @@ p{
 .grid{   /*3 imagenes principales*/
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5rem;
-    margin: 140px ;
+    gap: 6rem;
+    margin: 7% 10% ;
 }
 
 
@@ -102,6 +104,8 @@ section a{
     padding: 15px 45px;
     text-align: center;
     text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2.5px;
     transition: 0.5s;
     background-size: 200% auto;
     border: none;

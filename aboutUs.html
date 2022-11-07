@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/aa39df13d7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="aboutUs.css">
     <title>Document</title>
@@ -21,14 +22,10 @@
         <a  href="contact.html"><button>Contact</button></a>
     </header>
 
- <!---  <h1 class="titulo">About Us</h1>
-
-<p class="descripcion">tattoo killa has the best artists, with the highest level. They have been tattooing our clients since the opening of our doors. Meet our experts.</p>    -->
-
-
+ 
     <main class="contenedor">
 
-        <div class="artista">
+        <div class="artista" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
             <img class="artista-imagen" src="images/AboutUs/artist1.jpg" alt="">
            <div class="datos">
             <p class="nombre">Jolyne Johnson</p>
@@ -45,23 +42,25 @@
            </div> 
         </div>
 
-        <div class="artista">
+
+        <div class="artista" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
             <img class="artista-imagen" src="images/AboutUs/artist2.jpg" alt="">
-           <div class="datos">
+            <div class="datos">
             <p class="nombre">Bruce Smith</p>
             <p class="descripcion">Realism Artist</p>
             <p>The goal is to express the reality of the characters/scenes/situations in the skin, paying special attention to small details that may go unnoticed to the eyes of others.
             </p>
             <div class="redes">
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-tiktok"></i>
-                <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                    <i class="fa-brands fa-linkedin"></i>
             </div>
-           </div> 
+            </div> 
         </div>
 
-        <div class="artista">
+
+        <div class="artista" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
             <img class="artista-imagen" src="images/AboutUs/artist3.jpg" alt="">
            <div class="datos">
             <p class="nombre">Sophie Williams</p>
@@ -76,7 +75,7 @@
            </div> 
         </div>
 
-        <div class="artista">
+        <div class="artista" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
             <img class="artista-imagen" src="images/AboutUs/artist4.jpg" alt="">
            <div class="datos">
             <p class="nombre">Connor Murphy</p>
@@ -93,5 +92,12 @@
         </div>
 
     </main>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 </html>

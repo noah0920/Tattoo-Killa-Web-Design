@@ -36,7 +36,6 @@ header{
 }
 
 header button{
-    background-color: #f00;
     padding: 7px 10px;
     border-radius: 15px;
     border: none;
@@ -84,9 +83,9 @@ header button:hover{
 
 
 .imagen-izquierda img{
-    width: 500px;
-    height: 740px;
-    border-radius: 20px;
+    width: 90%; /*computadora colegio*/
+    height: 100%;
+    border-radius: 20px 0 0 20px;
     overflow: hidden;
 }
 
@@ -101,9 +100,7 @@ header button:hover{
     font-weight: 500;
     letter-spacing: 1px;
 }
-textarea{
-    margin: 10px 0 ;
-}
+
 .inputs{
     padding: 0 20px;
 }
@@ -115,6 +112,7 @@ textarea{
     border-bottom: 1px solid #000;
     width: 250px;
     margin: 20px 0;
+    padding: 5px;
 }
 
 .inputs input:focus{
@@ -123,12 +121,14 @@ textarea{
 }
 
 span{
+    font-size: 18px;
     display: flex;
     margin: 20px 0;   /*colocar de nuevo el checkbox*/
 }
 
 .mensaje{
-    font-size: 12px;
+    font-size: 18px;
+    margin: 50px 10px; /*compu cole*/
 }
 button{
     display: flex;
@@ -140,6 +140,19 @@ button{
     color: #000;
 }
 
+textarea{
+    resize: none;
+    width: 60%;
+    background: transparent;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 10px 0 ;
+    padding: 2%;
+}
 
 
 /*BOTON CHECKBOX*/

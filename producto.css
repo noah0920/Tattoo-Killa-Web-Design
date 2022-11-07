@@ -67,16 +67,16 @@ header button:hover{
     background-size: cover;
     width: 496px;
     height: 372px;
-    margin: 20px auto;
     border-radius: 20px;
 }
 /*contenedor de todos los elementos*/
 .producto{
-    margin: 140px auto;
-    width: 160vh;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    margin-left: auto;
+    margin-right: auto;
+    width: 170vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     border-radius: 20px;
     overflow: hidden;
 }
@@ -85,9 +85,9 @@ header button:hover{
 .producto .datos{
     background-color: #fff;
     border-radius: 30px;
-    margin: 20px auto;
+    padding: 2.5%;
     width: 500px;
-    height: 95vh;
+    height: 76vh;
 }
 
 /*estilos generales*/
@@ -107,17 +107,17 @@ header button:hover{
 }
 
 .producto .datos .precio h3{
-    font-size: 24px;
-    font-weight: 500;
+    font-size: 26px;
+    font-weight: bold;
     margin: 15px 0;
 }
 .producto .datos .precio span{
-    font-size: 20px;
+    font-size: 23px;
 }
 .producto .datos .precio a{
     display: block;
     margin: 15px 0 ;
-    color: #5f5e5e;
+    color: blue;
     text-decoration:none ;
     font-size: 16px;
 }
@@ -130,18 +130,17 @@ header button:hover{
     font-size: 16px;
 }
 .producto .datos .envio a{
-    color: #5f5e5e;
+    color: blue;
 }
 .producto .devolucion a{
     display: block;
     margin: 10px 0;
     text-decoration: none;
-    color: #5f5e5e;
+    color: blue;
 }
 
 /*botones comprar*/
 .comprar-ahora, .comprar-carrito{
-    background-color: aqua;
     width: 80%;
     height: 45px;
     border-radius: 10px;
@@ -167,6 +166,9 @@ button a{
 }
 .comprar-ahora{
     background-color: #000;
+}
+.comprar-ahora, .comprar-carrito{
+    padding: 5px;
 }
 /*medios de pago*/
 .pago{

@@ -13,7 +13,7 @@ body{
     ) ,url('images/Contact/bc-contact.jpg');
     background-size: cover;
     background-position: center center;
-    height: 130vh;
+    height: 100%;
 }
 
 /*barra de navegacion*/
@@ -75,15 +75,17 @@ h1{
 p{
     color: #e7e7e7;
     font-size: 20px;
+    line-height: 2.3rem;
     display: flex;
     justify-content: center;
-    margin: 70px 50px;
+    margin: 4% ;
 }
 
 .imagen-producto{
     width: 366px;
     height: 274px;
     margin: 0 50px;
+    border-radius: 10px;
 }
 
 .imagen-producto:hover{
@@ -94,7 +96,7 @@ p{
 .producto a{
     display: inline-block;
     width: 140px;
-    margin: 0 183px;
+    margin: 0 27%;
     text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -116,7 +118,7 @@ p{
 .grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    gap: 3rem;
 }
 
 /*hover con texto en imagen*/

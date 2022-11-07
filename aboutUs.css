@@ -8,12 +8,11 @@ body{
     background-image:linear-gradient(
         0deg,
         rgba(0,0,0,0.5),
-        rgba(0,0,0,0.3)
+        rgba(0,0,0,0.5)
     ) ,url('images/Contact/bc-contact.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100vh;
-    height: 430vh;
+    height: 100%;
     font-family: sans-serif;
 }
 
@@ -76,15 +75,12 @@ header button:hover{
     margin-left: 600px;
 }
 
-.descripcion{
-    color: #fff;
-    text-align: center;
-}
 
 /*imagenes del artista*/
 .artista-imagen{
     width: 354px;
     height: 530px;
+    box-shadow: 2px 1px 30px 10px rgba(255,255,255,0.40);
 }
 .artista{
     display: grid;
@@ -93,25 +89,24 @@ header button:hover{
     gap: 2rem;
     align-items: center;
     margin: 150px 200px;
-    box-shadow: 2px 1px 30px 10px rgba(255,255,255,0.40);
 }
 
 /*informacion del artista*/
 .datos p{
     color: #fff;
-    margin: 20px 50px;
+    margin: 15px 20px;
+    font-size: 20px;
 }
 .datos .nombre{
     font-size: 30px;
-    display: block;
     width: 300px;
-   
     background-color: gray;
     padding: 10px 20px;
-    text-align: center;
     border-radius: 180px;
     font-weight: bold;
     letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
 }
 
 .datos .descripcion{
