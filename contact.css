@@ -72,7 +72,7 @@ header button:hover{
 
 /*contenedor*/
 .contenedor{
-    background-color: #BFBBB4;
+    background-color: #161515;
     width:130vh;
     height: 100vh;
     margin: 100px 250px ;
@@ -89,70 +89,92 @@ header button:hover{
     overflow: hidden;
 }
 
-.formulario-derecha h1{
-    font-size: 40px;
-    margin-bottom: 30px;
+.contenedor-form h1{
     text-align: center;
-    padding-top: 20px;
-}
-
-.formulario-derecha h3{
-    font-weight: 500;
+    padding: 20px 0 20px 0;
+    color: #e7e7e7;
+    font-size: 40px;
     letter-spacing: 1px;
+    /* width: 70%;
+    border-bottom: 1px solid #e7e7e7 ; */
 }
-
-.inputs{
-    padding: 0 20px;
+.contenedor-form form{
+    box-sizing: border-box;
+    padding: 0 40px;
 }
-
-.inputs input{
-    background: transparent;
-    outline: none;
+.contenedor-form span{
+    color: #e7e7ee;
+    display: flex;
+    justify-content: center;
+    margin: 0 5px;
+}
+.contenedor-form button{
+    background: none;
     border: none;
-    border-bottom: 1px solid #000;
-    width: 250px;
-    margin: 20px 0;
-    padding: 5px;
+    color: #000;
+    background-color: #e7e7e7;
+    padding: 8px;
+    border-radius: 10px;
+    margin: 50px 0;
 }
-
-.inputs input:focus{
-    width: 300px;
+.contenedor-form button:hover{
+    color: #e7e7e7;
+    background-color: #969292;
     transition: .3s;
 }
-
-span{
-    font-size: 18px;
-    display: flex;
-    margin: 20px 0;   /*colocar de nuevo el checkbox*/
+form .items{
+    position: relative;
+    border-bottom: 2px solid #d6d3d3;
+    margin: 30px 0;
 }
-
-.mensaje{
-    font-size: 18px;
-    margin: 50px 10px; /*compu cole*/
-}
-button{
-    display: flex;
-    margin-top: 10px;
-    padding: 8px 12px;
+.items input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
     border: none;
-    font-size: 15px;
-    border-radius: 50px;
-    color: #000;
+    background: none;
+    outline: none;
+}
+.items label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #f1e5e4;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: .5s;
+}
+.items span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #ada1a0;
+    transition: .5s;
+}
+.items input:focus ~ label,
+.items input:valid ~ label{
+    top: -5px;
+    color: #ada1a0;
+}
+.items input:focus ~ span::before,
+.items input:valid ~ span::before{
+    width: 100%;
 }
 
-textarea{
-    resize: none;
-    width: 60%;
-    background: transparent;
-    border-radius: 10px;
-    outline: none;
-    font-size: 15px;
-    letter-spacing: 1px;
-    font-family: sans-serif;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    margin: 10px 0 ;
-    padding: 2%;
-}
+
+
+
+
+
+
+
+
+
+
 
 
 /*BOTON CHECKBOX*/
@@ -160,11 +182,14 @@ textarea{
     margin: 10px;
     display: flex;
 }
+.boton span{
+    color: #f1e5e4;
+}
 .label-switch{
     display: inline-block;
     width: 55px;
     height: 30px;
-    background: rgb(0, 0, 0);
+    background: rgb(187, 184, 184);
     border-radius: 100px;
     margin-top: 10px;
     margin-left: 10px;
@@ -173,7 +198,7 @@ textarea{
 }
 
 #boton-switch:checked~ .label-switch{  /*hace que cambie de color al presionarlo*/
-    background:rgb(110, 103, 103) ;
+    background:rgb(96, 90, 90) ;
 }
 .label-switch::after{
     position: absolute;
